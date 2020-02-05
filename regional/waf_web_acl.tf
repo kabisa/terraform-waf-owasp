@@ -6,6 +6,10 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
     type = "ALLOW"
   }
 
+  logging_configuration {
+    log_destination = var.kinesis_arn
+  }
+
   rule {
     action {
       type = "BLOCK"
