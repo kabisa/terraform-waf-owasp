@@ -12,7 +12,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 1
@@ -22,7 +22,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 2
@@ -32,7 +32,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 3
@@ -42,7 +42,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 4
@@ -52,7 +52,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 5
@@ -62,7 +62,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 6
@@ -72,7 +72,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 7
@@ -82,7 +82,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 8
@@ -92,7 +92,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 9
@@ -102,7 +102,7 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
 
   rule {
     action {
-      type = "BLOCK"
+      type = local.rules_action
     }
 
     priority = 10
