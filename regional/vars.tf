@@ -12,3 +12,12 @@ variable "kinesis_arn" {
   type    = string
   default = ""
 }
+
+variable "dry_run" {
+  type    = bool
+  default = false
+}
+
+locals {
+  rules_action = var.dry_run ? "COUNT" : "BLOCK"
+}
